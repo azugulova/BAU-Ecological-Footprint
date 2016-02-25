@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css" media="all">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Huerting - Contacto</title>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700|Raleway:400,300,700,300italic|Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+      #map {
+        width: 400px;
+        height: 380px;
+        background-color: #CCC;
+      }
+  </style>
+</head>
+<body>
+
+  <!--
+  
+  <div class="contenedor-movil">
+    <div class="element-movil">
+      Home
+    </div>  
+    <div class="element-movil">
+      About
+    </div>  
+    <div class="element-movil">
+      Products
+    </div>  
+    <div class="element-movil">
+      Contact
+    </div>      
+  </div>
+
+   <div class="contenedor-tablet">
+    <div class="element-tablet">
+      Home
+    </div>  
+    <div class="element-tablet">
+      About
+    </div>  
+    <div class="element-tablet">
+      Products
+    </div>  
+    <div class="element-tablet">
+      Contact
+    </div>      
+  </div> 
+
+-->
+
+<!--Header-->
+  <div class="header clearfix">
+    <div class="logo"></div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Huertos</a>
+        </li>  
+        <li>
+          <a href="contact.html">Contacto</a>
+        </li>  
+        <li>
+          <a href="about.html">About</a>
+        </li>   
+      </ul>  
+    </nav>  
+  </div>
+
+<!--Body de pagina de contacto-->
+  <div class="contact-page-container">
+    <div class="photo"><img src="img/contacto.jpeg" alt="Photo de tierra">
+    </div>
+    <div class="contacto">
+
+      <form class="formulario" action="MAILTO:huerting@gmail.com" method="post" enctype="text/plain">
+      <h1>Contacta con nosotros</h1><br>      
+          <label>Nombre</label>
+          <input type="text" name="nombre"><br>
+          <label>Email</label>
+          <input type="email" name="email"><br>
+          <label>Mensaje</label>
+          <textarea type="text" name="mensaje"></textarea>
+          <input class="enviar" type="submit" value="ENVIAR">          
+      </form>
+      <div id="map">    
+      </div> 
+    </div>
+  </div>
+  <footer>Copyright Huerting 2016</footer>
+  <script>
+
+      function initMap() {
+        var myLatLng = {lat: 41.39771, lng: 2.19563};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          zoom: 15
+        });
+          var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Huerting BAU'
+  });
+      }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+</body>
+</html>
