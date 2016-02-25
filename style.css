@@ -1,0 +1,585 @@
+/*GENERAL SETTINGS*/
+
+html {
+height: 100%;
+overflow-x: hidden;
+}
+
+body{
+perspective: 1px;
+transform-style: preserve-3d;
+height: 100%;
+margin: 0 auto;
+background-color: #F6EAD2;
+position: relative;
+}
+
+nav{
+	flex-grow: 1;
+	margin:0;
+	padding: 0; 
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 1rem;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-color: black;
+	padding-top: 85px;
+}
+
+h1{
+	color: black;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 300;
+	padding: 0;
+}
+
+h2{
+	color: black;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+p{
+	font-family: 'Raleway';
+	font-size: 1rem;
+	color: black;
+}
+
+.p-i{
+	font-family: 'Raleway';
+	font-size: 1rem;
+	color: black;
+	font-style: italic;
+}
+
+
+
+/*HEADER*/
+
+.header {
+	font-family:'Raleway';  
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 6rem; 
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.header ul a{
+  color: #9b8441;
+  font-weight: 700;
+  font-size: .6rem;
+  font-size: 0.7rem;
+  max-width: 20px;
+  letter-spacing: .2rem;
+  line-height: 2.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 2vw;
+  
+}
+
+.header ul{
+display: flex;
+justify-content: space-between;
+list-style: none;
+
+}
+
+
+.header ul a:hover{
+  opacity: 0.5;
+}
+
+
+.logo{
+  flex-grow:1 ;
+  background-image: url('img/Logo_XS.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 20px;
+  flex-basis: 20%;
+  }
+
+
+
+.contenedor-desktop{
+  display: flex;
+  flex-direction:row;
+  margin-bottom: 50px;
+  flex-basis:100%;
+
+}
+
+
+.menu-desktop{
+  background-color: green;
+  padding: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: "Arial";
+  flex-basis:100%;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+/*Tablet*/
+
+	 .logo{
+	  flex-grow:1 ;
+	  background-image: url('img/Logo_S_M_L.png');
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: contain;
+	  max-width: 200px;
+	  }
+	  nav{
+	  	flex-grow: 1;
+	  	margin:0;
+	  	padding: 0; 
+	  	display: flex;
+	  	flex-direction: row;
+	  	padding-bottom: 1rem;
+	  	justify-content: flex-end;
+	  	align-items: flex-end;
+	  	background-color: black;
+	  	padding-top: 88px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+/*Desktop*/
+
+	 .logo{
+	  flex-grow:1 ;
+	  background-image: url('img/Logo_S_M_L.png');
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-size: contain;
+	  }
+
+	  nav{
+	  	flex-grow: 1;
+	  	margin:0;
+	  	padding: 0; 
+	  	display: flex;
+	  	flex-direction: row;
+	  	padding-bottom: 1rem;
+	  	justify-content: flex-end;
+	  	align-items: flex-end;
+	  	background-color: black;
+	  	padding-top: 88px;
+}
+}
+
+
+
+
+
+/*FORMULARIO DE CONTACTO*/
+
+/*Movil*/
+
+.contact-page-container{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.photo{
+	flex-grow: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.contacto{
+		margin-left:50px;
+		flex-grow: 1;
+		display: flex;
+		order: -1;
+		flex-direction: column;
+
+	}
+
+.formulario{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		margin-bottom: 30px;
+		margin-right: 30px;
+
+}
+
+.mapa{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		margin-bottom: 20px;
+	}
+
+input {
+    width: 260px;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    background: #66958D;
+    border: 1px solid #66958D;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    outline: none;
+}
+
+textarea {
+    width: 260px;
+    height: 92px;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    background: #66958D;
+    border: 1px solid #66958D;
+    border-radius: 5px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    color: #cc9471;
+    outline: none;
+}
+
+label{
+	text-transform: uppercase;
+	font-family: 'Raleway';
+    font-size: 1rem;
+
+}
+
+footer{
+	background-color: black;
+	height: 50px;
+	color: #9b8441;
+	font-family: 'Raleway';
+	font-size: 0.7rem;
+	padding-left: 100px;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.email-label{
+    margin-top: 20px;
+
+}
+
+.enviar{
+	width: 147px;
+	height: 38px;
+	background-color: #582E3D;
+	color: white;
+}
+
+.btn{
+	width: 147px;
+	height: 38px;
+	background-color: #582E3D;
+	border: solid 1px #582E3D;
+	color: white;
+	font-family: 'Raleway';
+	font-size: 1rem;
+	text-transform: uppercase;
+	padding: 10px;
+	text-decoration: none;
+	margin-top: 50px; 
+
+}
+
+@media only screen and (min-width: 600px) {
+/*Tablet*/
+
+	.contact-page-container{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.photo{
+		flex-grow: 1;
+	}
+
+	.contacto{
+		display: flex;
+		order: 1;
+
+	}
+
+	.formulario{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+	.mapa{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+/*Desktop*/
+
+	.contact-page-container{
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	.photo{
+		flex-grow: 1;
+		width: 30%;
+		overflow: hidden;
+		height: 100vh;
+	}
+
+	.contacto{
+		display: flex;
+		flex-direction: row;
+		order: 1;
+	}
+
+	.formulario{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+
+	}
+
+	.mapa{
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 50%;
+	}
+
+}
+
+
+
+
+/*SOBRE NOSOTROS*/
+
+/*Movil*/
+.about-page-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.about{
+	flex: 1 1 50%;
+	margin: 20px;
+
+}
+
+.photo-about{
+	flex: 1 1 50%;
+	background-image: url('img/contacto.jpeg');
+	background-size: 30vh;
+	min-width: 50%;
+	background-position: center;	
+
+}
+
+.about p{
+	font-family: 'Raleway';
+	font-size: 16;
+	color: black;
+}
+
+@media only screen and (min-width: 600px) {
+/*Tablet*/
+	.about-page-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: 
+	}
+
+	.about{
+		flex: 1 1 50%;
+		margin: 20px;
+
+	}
+
+	.photo-about{
+		flex: 1 1 50%;
+		background-image: url('img/contacto.jpeg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+/*Desktop*/
+
+	.about-page-container{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+	.about{
+		flex: 1 1 40%;
+		margin: 20px;
+		max-width: 40%;
+
+	}
+
+	.photo-about{
+		flex: 1 1 60%;
+		background-image: url('img/contacto.jpeg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: center;
+	}
+}
+
+/*LISTADO HUERTOS*/
+
+.ad-photo-img-1{
+	background-image: url('img/im-1.jpeg');
+}
+
+.ad-photo-img-2{
+	background-image: url('img/im-2.jpeg');
+}
+
+.ad-photo-img-3{
+	background-image: url('img/im-3.jpeg');	
+}
+
+
+.ad-list{
+	display: flex;
+	flex-direction: column;
+}
+.ad-container{
+	flex: 1 1 100%;
+	display: flex;
+	flex-direction: column;
+	border-bottom: solid 1px #9b8441;
+}
+.ad-photo{
+	flex: 1 1 50%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-size: 100%;	
+	padding: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+
+.ad-description{
+	flex-grow: 1;
+	padding-left: 20px;
+	padding-top: 0s;
+	padding-bottom: 20px;
+	order: 2;
+}
+
+.price{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 20%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 20px;
+	padding: 0;
+
+}
+
+.h-price{
+	font-size: 48px;
+	font-family: 'Raleway';
+	padding: 0;
+	margin:0;
+
+}
+
+
+@media only screen and (min-width: 600px) {
+/*Tablet*/
+	.ad-container{
+		flex: 1 1 50%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.ad-description{
+	order: 0;
+	}
+	.ad-photo{
+	flex: 1 1 50%;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-size: cover;	
+	margin-bottom: 20px;
+	margin-top: 20px;
+	}
+
+	.price{
+		padding: 20px;
+	}
+}
+
+
+
+@media only screen and (min-width: 768px) {
+/*Desktop*/
+	.ad-container{
+		flex: 1 1 50%;
+		display: flex;
+		flex-direction: row;
+	}
+	.ad-photo{
+	flex: 1 1 50%;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-size: cover;	
+	margin-bottom: 20px;
+	margin-top: 20px;
+	}
+	.price{
+		padding: 20px;
+	}
+
+	.ad-description{
+	max-width: 40%;
+	order: 0;
+	}
+
+}
+}
+
+
+
+
+
