@@ -36,50 +36,35 @@
   <!--Body de pagina de contacto-->
   <div class="register-container">
      <form class="form">
-      <h1>Contáctanos</h1><br>  
+      <h1>Regístrate</h1><br>  
 
           <label>Nombre</label><br>
           <input type="text" name="name"><br>
 
+          <label>Apellidos</label><br>
+          <input type="text" name="surname"><br>
+
           <label>Email</label><br>
           <input type="email" name="mail"><br>
 
-          <label>Asunto</label><br>
-          <input type="text" name="subject"><br>
+          <label>Contraseña</label><br>
+          <input type="password" name="pwd"><br>
 
-          <label>Mensaje</label><br>
-          <textarea type="text" name="mensaje"></textarea>   
+          <label>Teléfono</label><br>
+          <input type="tel" name="tel"><br>
 
-          <input class="btn-form" type="submit" value="Enviar">          
+          <label>Dirección</label><br>
+          <input type="text" name="address"><br>
+
+          <label>Localidad</label><br>
+          <input type="text" name="city">
+
+          <input class="form-checkbox" type="checkbox" name="terms" value="accept">Acepto las Condiciones de Huerting y la Privacidad incluyendo el Uso de las cookies.
+
+        
+          <input class="btn-form" type="submit" value="Finalizar">          
       </form>
   </div>
 
-
-<!--Body de pagina de contacto-->
-
-      
-      </form>
-      <div id="map">    
-      </div> 
-    </div>
-  </div>
-  <footer>Copyright Huerting 2016</footer>
-  <script>
-
-      function initMap() {
-        var myLatLng = {lat: 41.39771, lng: 2.19563};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
-          zoom: 15
-        });
-          var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'Huerting BAU'
-  });
-      }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
 </body>
 </html>
