@@ -1,0 +1,473 @@
+/*GENERAL SETTINGS*/
+
+h2, h3,h4,h5, h6, input, p, .form-checkbox, textarea,.p-confirmation
+	font-family: 'Raleway';
+}
+
+.h-title{
+	color:rgba(159,80,78);
+	font-family: 'Raleway';
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+
+
+h2{
+	color:rgba(159,80,78);
+	font-family: 'Raleway';
+	font-size: 2rem;
+}
+
+p{
+	font-size: 1,125rem;
+	font-family: 'Raleway';
+}
+
+html {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body{
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+.main-title{
+	color: black;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 300;
+	padding: 0;
+}
+
+.secondary-title{
+	color: black;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+p{
+	font-family: 'Raleway';
+	font-size: 1rem;
+	color: black;
+	padding: 0px;
+}
+
+.p-i{
+	font-family: 'Raleway';
+	font-size: 1rem;
+	color: black;
+	font-style: italic;
+}
+
+
+
+
+
+
+
+/*REGISTRO*/
+
+.breadcrumb{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.breadcrumb-step{
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	border-top: 1px solid #9b8441;
+	border-bottom: 1px solid #9b8441;
+	border-left: 1px solid #9b8441;
+	font-family: 'Raleway';
+	width: 100%;
+}
+
+.breadcrumb-step-border{
+	border-right: 1px solid #9b8441;
+}
+
+.breadcrumb-step-current{
+	background-color:#f5f2eb;
+	text-decoration: bold;
+}
+
+
+.register-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	margin: 0px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	background-color: white;
+	padding-bottom: 50px;
+}
+
+label{
+	font-size: 1rem;
+	margin-top: 0.5rem; 
+	font-family: 'Raleway';
+}
+
+.input-style, textarea{
+	margin-top: 0.2rem;
+	margin-bottom: 1rem;
+	height: 40px;
+	width: 100%;
+	min-width: 300px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1rem;
+	font-family: 'Raleway';
+	box-sizing: border-box;
+}
+
+.checkbox-style{
+	padding: 0px;
+	margin: 10px;
+	margin-left: 0px;
+}
+
+
+.btn-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #955251;
+	color: white;
+	font-family: 'Raleway';
+	font-size: 1rem;
+	border: none;
+	height: 45px;
+	min-width: 300px;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	margin-top: 10px;
+}
+
+.form-checkbox{
+	display: flex;
+	width: 60%;
+	min-width: 300px;
+	height: 80px;
+}
+
+
+textarea {
+	outline: none;
+	height: 90px;
+}
+
+.h2-gold{
+	color:#9b8441;
+	font-family: 'Raleway';
+}
+
+
+.h2-red{
+	color:#955251;
+	font-family: 'Raleway';
+}
+
+
+@media only screen and (min-width: 600px) {
+	/*Tablet*/
+	.register-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #f5f2eb;
+	}
+
+	.form{
+		margin-top: 100px;
+		padding: 50px 100px;
+		width: 50%;
+		background-color: white;
+		margin-bottom: 100px;
+
+	}
+
+	label{
+		font-size: 1,125rem;
+		margin-top: 0.5rem; 
+		font-family: 'Raleway';
+	}
+
+	.input-style, textarea{
+		margin-top: 0.2rem;
+		margin-bottom: 1rem;
+		height: 45px;
+		width: 100%;
+		min-width: 300px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1rem;
+		font-family: 'Raleway';
+		box-sizing: border-box;
+
+	}
+
+
+	.form-checkbox{
+		display: flex;
+		width: 60%;
+		min-width: 300px;
+		height: 80px;
+	}
+
+
+	textarea {
+		outline: none;
+		height: 90px;
+	}
+
+}
+
+	textarea {
+		outline: none;
+		height: 90px;
+	}
+
+	.btn-form{
+	font-size: 1,125rem;
+	}
+
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+	/*Desktop*/
+
+
+	.register-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #f5f2eb;
+	}
+
+	.form{
+		margin-top: 100px;
+		padding: 50px 100px;
+		width: 50%;
+		background-color: white;
+		margin-bottom: 100px;
+	}
+
+	label{
+		font-size: 1,125rem;
+		margin-top: 0.5rem; 
+		display: block;
+		font-family: 'Raleway';
+	}
+
+	input, textarea{
+		display: block;
+		margin-top: 0.2rem;
+		margin-bottom: 1rem;
+		height: 45px;
+		width: 100%;
+		min-width: 300px;
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1rem;
+		font-family: 'Raleway';
+		box-sizing: border-box;
+	}
+
+
+	.form-checkbox{
+		display: flex;
+		width: 60%;
+		min-width: 300px;
+		height: 80px;
+	}
+
+
+	textarea {
+		outline: none;
+		height: 90px;
+	}
+
+	.btn-form{
+	font-size: 1,125rem;
+	}
+
+
+
+}
+
+/*PAGINAS DE CONFIRMACION*/
+
+.register-confirm-container{
+	background-color: #9b8441;
+	margin: 0px;
+	line-height: 2rem;
+}
+
+.p-confirmation{
+	padding-top: 200px;
+	display: flex;
+	align-items: space-around;
+	justify-content: center;
+	flex-direction: row;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+
+}
+
+.goto-blog-container{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 200px;
+}
+
+.register-confirm-container a{
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
+	font-family: 'Raleway';
+	text-decoration: underline;
+	
+}
+
+
+/*UPLOAD PHOTOS*/
+.upload_form_cont {
+    background: -moz-linear-gradient(#ffffff, #f2f2f2);
+    background: -ms-linear-gradient(#ffffff, #f2f2f2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2));
+    background: -webkit-linear-gradient(#ffffff, #f2f2f2);
+    background: -o-linear-gradient(#ffffff, #f2f2f2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f2f2f2')";
+    background: linear-gradient(#ffffff, #f2f2f2);
+
+    color:#000;
+    overflow:hidden;
+}
+#upload_form {
+    float:left;
+    padding:20px;
+    width:700px;
+}
+#preview {
+    background-color:#fff;
+    display:block;
+    float:right;
+    width:200px;
+}
+#upload_form > div {
+    margin-bottom:10px;
+}
+#speed,#remaining {
+    float:left;
+    width:100px;
+}
+#b_transfered {
+    float:right;
+    text-align:right;
+}
+.clear_both {
+    clear:both;
+}
+input {
+    border:1px solid #ccc;
+    font-size:14pt;
+    padding:5px 10px;
+}
+
+#image_file {
+    width:400px;
+}
+#progress_info {
+    font-size:10pt;
+}
+#fileinfo,#error,#error2,#abort,#warnsize {
+    color:#aaa;
+    display:none;
+    font-size:10pt;
+    font-style:italic;
+    margin-top:10px;
+}
+#progress {
+    border:1px solid #ccc;
+    display:none;
+    float:left;
+    height:14px;
+
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    -webkit-border-radius:10px;
+
+    background: -moz-linear-gradient(#66cc00, #4b9500);
+    background: -ms-linear-gradient(#66cc00, #4b9500);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66cc00), color-stop(100%, #4b9500));
+    background: -webkit-linear-gradient(#66cc00, #4b9500);
+    background: -o-linear-gradient(#66cc00, #4b9500);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66cc00', endColorstr='#4b9500');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#66cc00', endColorstr='#4b9500')";
+    background: linear-gradient(#66cc00, #4b9500);
+}
+#progress_percent {
+    float:right;
+}
+#upload_response {
+    margin-top: 10px;
+    padding: 20px;
+    overflow: hidden;
+    display: none;
+    border: 1px solid #ccc;
+
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+    -webkit-border-radius:10px;
+
+    box-shadow: 0 0 5px #ccc;
+    background: -moz-linear-gradient(#bbb, #eee);
+    background: -ms-linear-gradient(#bbb, #eee);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bbb), color-stop(100%, #eee));
+    background: -webkit-linear-gradient(#bbb, #eee);
+    background: -o-linear-gradient(#bbb, #eee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbb', endColorstr='#eee');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#bbb', endColorstr='#eee')";
+    background: linear-gradient(#bbb, #eee);
+}
+
+
+
+
+
+
+
+
+
+
+

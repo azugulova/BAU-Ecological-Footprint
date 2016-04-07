@@ -1,0 +1,54 @@
+
+
+.texto{
+	
+	color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 14pt;
+
+
+	background-color:rgba(245,242,235, 0.3) ;
+		
+	font-family: 'Raleway', sans-serif;
+
+	font-size: 18px;
+	z-index: -1;
+
+	
+}
+
+.texto p{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+
+
+.boton{
+	background-color:rgba(245,242,235, 0.3) ;
+	height: 40px;
+	width: 12em;
+	border: 2px solid #AE5351;
+	
+	color:#AE5351; 
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+
+}
+
+
+
+a{
+	text-decoration: none;
+	color:#AE5351; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
