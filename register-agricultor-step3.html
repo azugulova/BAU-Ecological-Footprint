@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/header.css" media="all">
+  <link rel="stylesheet" type="text/css" href="css/footer.css" media="all">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Huerting - Paso 3 - Registro</title>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700|Raleway:400,300,700,300italic|Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <style>
+    #map {
+      width: 500px;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+
+ <!--Header desktop-->
+ <div class="header">
+  <div class="top-header">
+    <div class="menu-button-container1"><a href="register.html"><strong>Regístrate</strong></a></div>
+    <div class="menu-button-container2"><a href="login.html">Accede</a></div>
+  </div>
+  <div class="bottom-header">
+    <div class="logo"></div>
+
+    <nav class="header-buttons">
+      <div><a href="listado.html">Huertos</a></div>
+      <div><a href="contact.html">Contacto</a></div>
+      <div><a href="about.html">Sobre nosotros</a></div>
+
+    </nav>  
+    <div class="publish-desktop">
+      <a class="btn-header" href="register-agricultor-step1.html">Publica tu anuncio</a>   
+    </div>
+  </div>
+</div>
+
+<!--Header mobile-->
+<div class="header-mobile">
+
+ <div class="top-header-mobile">
+   <div class="open-menu">
+   </div>
+
+   <div class="mobile-menu-container">
+     <ul>
+      <li>
+        <a href="listado.html">Huertos</a>
+      </li>  
+      <li>
+        <a href="register.html">Regístrate</a>
+      </li> 
+      <li>
+        <a href="login.html">Accede</a>
+      </li>  
+      <li>
+        <a href="contact.html">Contacto</a>
+      </li>  
+      <li>
+        <a href="about.html">Sobre nosotros</a>
+      </li> 
+     </ul> 
+   </div>
+
+   <div class="logo-mobile">
+   </div>
+
+   <div class="close-menu">
+   </div>
+
+  </div>
+
+  <div class="publish-mobile">
+    <a class="btn-header" href="register-agricultor-step1.html">Publica tu anuncio</a>     
+  </div>
+</div>
+
+
+  <!--Body de pagina de contacto-->
+  <div class="register-container">
+
+    <form  id="upload form" class="form" enctype="multipart/form-data" method="post" action="upload.php">
+    
+      <div class="breadcrumb">
+        <div class="breadcrumb-step">Paso 1</div>
+        <div class="breadcrumb-step ">Paso 2</div>
+        <div class="breadcrumb-step breadcrumb-step-border breadcrumb-step-current">Paso 3</div>
+      </div>
+
+      <h2 class="h2-gold">Elige las fotografías de tu huerto</h2>
+
+
+      <div>
+        <span></span>
+        <input class="btn-form" type="button" value="Seleccionar" onclick="startUploading()" />
+      </div>
+      <div id="fileinfo">
+        <div id="filename"></div>
+      </div>
+      <div id="error">Has seleccionado un archivo con un formato incorrecto</div>
+      <div id="error2">Error de subida del fichero</div>
+      <div id="abort">Error de conexion</div>
+      <div id="warnsize">Error de tamaño de fichero</div>
+      <div id="progress_info">
+        <div id="progress"></div>
+        <div id="progress_percent">&nbsp;</div>
+        <div class="clear_both"></div>
+        <div>
+          <div id="speed">&nbsp;</div>
+          <div id="remaining">&nbsp;</div>
+          <div id="b_transfered">&nbsp;</div>
+          <div class="clear_both"></div>
+        </div>
+        <div id="upload_response"></div>
+      </div>
+          <a class="btn-form" href="register-agricultor-step3.html">Siguiente</a>    
+
+    </form>
+
+<img id="preview" />
+
+
+  </div>
+
+  <footer>
+<!-- INSERTAR EN  EL A HREF EL ENLACE  -->
+
+<div class="logo_footer"
+  <a href=""><IMG SRC="img/huerting.svg"></a>
+</div>
+<div class="texto_footer">
+  <div class="redes_sociales">
+    <a href="https://www.facebook.com/"><IMG SRC="img/facebook.svg"></a>
+    <a href="https://plus.google.com/"><IMG SRC="img/googlep.svg"></a>
+    <a href="https://www.instagram.com/"><IMG SRC="img/instagram.svg"></a>
+    <a href="https://es.pinterest.com/"><IMG SRC="img/pinterest.svg"></a>
+  </div>
+
+
+  <div class="aviso_legal">
+
+    <a href="">Aviso legal</a>
+    <p>Copyright 2016 ©
+    Todos los derechos reservados</p>
+
+  </div>
+
+  <div class="direccion">
+    <p>C/Pujades, 118 08005 Barcelona</p>
+    <p>Telf.: +34 93 415 34 74</p>
+  </div>
+
+</div>
+</footer>
+
+
+  <script>
+   function chooseFile() {
+    $("#fileInput").click();
+  }
+</script>
+
+</body>
+</html>
